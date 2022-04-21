@@ -8,7 +8,7 @@ public class SlowController {
 
     @GetMapping("/slow")
     public String slowRequest() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         return "Sllooooowwww";
     }
 
